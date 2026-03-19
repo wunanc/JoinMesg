@@ -1,6 +1,6 @@
 # JoinMesg Plugin Changelog
 
-## v1.2.0
+## v1.2.1
 - Add:
     - Add plugin key features
 - Fixes:
