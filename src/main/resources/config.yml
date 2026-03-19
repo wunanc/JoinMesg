@@ -1,0 +1,20 @@
+#欢迎首次加入
+welcomeFirstJoin:
+  #是否开启
+  enabled: true
+  #信息
+  message: "&d欢迎新玩家 &e%player% &d加入服务器!"
+
+#不开启以下功能则是不修改而不是关闭信息
+#玩家加入服务器
+join:
+  enabled: true
+  message: "&a[+]%player%"
+
+#玩家离开服务器
+quit:
+  enabled: true
+  message: "&c[-]%player%"
+
+#兼容模式(如果功能无法正常使用可以开关这个选项试试)
+compatible: true
