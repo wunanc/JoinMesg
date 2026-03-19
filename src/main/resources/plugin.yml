@@ -5,3 +5,4 @@ api-version: '1.20'
 authors: [ Wunanc ]
 description: Customize join, quit, and first-join messages. Fully compatible with Folia, Bukkit/Paper, and their forks!
 website: https://mc.wunanc.top
+folia-supported: true

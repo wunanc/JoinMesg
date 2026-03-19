@@ -36,10 +36,14 @@
                     <relocations>
                         <relocation>
                             <pattern>org.bstats</pattern>
-                            <!-- TODO: Replace this with your package! -->
-                            <shadedPattern>top.wunanc.joinmesg</shadedPattern>
+                            <shadedPattern>top.wunanc.joinmesg.shaded.bstats</shadedPattern>
                         </relocation>
                     </relocations>
+                    <transformers>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <mainClass>top.wunanc.joinmesg.JoinMesg</mainClass>
+                        </transformer>
+                    </transformers>
                 </configuration>
                 <executions>
                     <execution>
