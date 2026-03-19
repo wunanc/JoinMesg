@@ -92,9 +92,13 @@ public class JoinDataManager {
      */
     private void saveJoinDataToFile() {
         try {
-            boolean gf = dataFile.getParentFile().mkdirs();
-            if (!gf){
-                XLogger.error("无法保存首次加入数据");
+            File parentDir = dataFile.getParentFile();
+            if (parentDir != null && !parentDir.exists()) {
+                boolean created = parentDir.mkdirs();
+                if (!created) {
+                    XLogger.error("无法创建数据文件夹");
+                    return;
+                }
             }
             try (Writer writer = new FileWriter(dataFile)) {
                 gson.toJson(joinedPlayers, writer);
