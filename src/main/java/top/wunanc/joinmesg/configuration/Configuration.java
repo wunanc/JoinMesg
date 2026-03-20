@@ -91,7 +91,7 @@ public class Configuration {
         return leaveMessage;
     }
 
-    public boolean isCompatible() {
-        return compatible;
+    public boolean notCompatible() {
+        return !compatible;
     }
 }

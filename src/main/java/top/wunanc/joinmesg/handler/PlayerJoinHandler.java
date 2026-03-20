@@ -41,7 +41,7 @@ public class PlayerJoinHandler implements Listener {
             String joinMessage = configManager.getJoinMessage();
             joinMessage = joinMessage.replace("%player%", player.getName());
 
-            if (!configManager.isCompatible()){
+            if (configManager.notCompatible()){
                 event.joinMessage(LegacyToMiniMessage.parse(joinMessage));
             } else {
                 event.joinMessage(null);

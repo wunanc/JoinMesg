@@ -6,3 +6,27 @@ authors: [ Wunanc ]
 description: Customize join, quit, and first-join messages. Fully compatible with Folia, Bukkit/Paper, and their forks!
 website: https://mc.wunanc.top
 folia-supported: true
+
+commands:
+  joinmesg:
+    description: Plugin master command
+    aliases: [jm]
+    permission: joinmesg.maincmd
+    usage: /joinmesg reload
+
+permissions:
+  joinmesg.*:
+    description: Full access to the plugin
+    children:
+      joinmesg.admin: true
+  joinmesg.admin:
+    description: Admin permissions for plugins
+    children:
+      joinmesg.maincmd: true
+      joinmesg.reload: true
+  joinmesg.maincmd:
+    description: Plugin command permissions
+    default: op
+  joinmesg.reload:
+    description: Reload the plugin
+    default: op

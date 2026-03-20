@@ -1,6 +1,10 @@
 # JoinMesg Plugin Changelog
 
 ## v1.2.2
+- Add:
+  - Added the main command reload function
+
+## v1.2.2
 - Fixes:
   - In any case, it will prompt that the first join data cannot be saved
 - Plan:

@@ -24,7 +24,7 @@ public class PlayerQuitHandler implements Listener {
         if (configManager.isLeaveMessageEnabled()) {
             String leaveMessage = configManager.getLeaveMessage();
             leaveMessage = leaveMessage.replace("%player%", player.getName());
-            if (!configManager.isCompatible()){
+            if (configManager.notCompatible()){
                 event.quitMessage(LegacyToMiniMessage.parse(leaveMessage));
             } else {
                 event.quitMessage(null);
