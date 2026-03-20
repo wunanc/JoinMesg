@@ -1,20 +1,18 @@
-#欢迎首次加入
+#Welcome to join for the first time
 welcomeFirstJoin:
-  #是否开启
   enabled: true
-  #信息
-  message: "&d欢迎新玩家 &e%player% &d加入服务器!"
+  message: "&dNew players &e%player% &dare welcome to join the server!"
 
-#不开启以下功能则是不修改而不是关闭信息
-#玩家加入服务器
+#If you don't turn on the following functions, you won't modify the information instead of turning it off
+#Players join the server
 join:
   enabled: true
   message: "&a[+]%player%"
 
-#玩家离开服务器
+#The player leaves the server
 quit:
   enabled: true
   message: "&c[-]%player%"
 
-#兼容模式(如果功能无法正常使用可以开关这个选项试试)
+#Compatibility mode (if the function does not work properly, you can try toggling this option)
 compatible: true
