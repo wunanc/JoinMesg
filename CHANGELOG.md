@@ -1,6 +1,6 @@
 # JoinMesg Plugin Changelog
 
-## v1.2.2
+## v1.3.3
 - Add:
   - Added the main command reload function
 
